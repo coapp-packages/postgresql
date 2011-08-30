@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{0686c35d-83cc-4be1-b47a-400adea85eda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\seg">
+      <UniqueIdentifier>{cdc8ccf0-c51b-47e9-a95e-38a96fe39c7a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\seg\seg.c">
+      <Filter>contrib\seg</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\seg\segparse.c">
+      <Filter>contrib\seg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="contrib\seg\segparse.y">
+      <Filter>contrib\seg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contrib\seg\segscan.l">
+      <Filter>contrib\seg</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

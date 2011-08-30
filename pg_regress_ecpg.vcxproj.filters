@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{b6c99332-7006-4ebf-9931-0eee7f560418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces">
+      <UniqueIdentifier>{35f98f82-abe0-467d-943f-835771476ac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\ecpg">
+      <UniqueIdentifier>{64b828f1-749e-4149-b9e4-55a88fbd088f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\ecpg\test">
+      <UniqueIdentifier>{3418bc75-7820-4a6c-88d5-73e68295a9af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test">
+      <UniqueIdentifier>{ec0e0353-a145-4d98-a681-59adbf2b3e61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\regress">
+      <UniqueIdentifier>{aa528aa8-d5b4-4b60-bd96-789eba4b59f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\interfaces\ecpg\test\pg_regress_ecpg.c">
+      <Filter>src\interfaces\ecpg\test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\regress\pg_regress.c">
+      <Filter>src\test\regress</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

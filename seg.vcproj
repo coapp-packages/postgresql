@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="seg" ProjectGUID="{14C4760F-C782-4B13-B971-29C6FC3D68D1}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\seg" IntermediateDirectory=".\Debug\seg"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\seg\" ObjectFile=".\Debug\seg\"
+		ProgramDataBaseFileName=".\Debug\seg\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\seg\seg.dll"
+		AdditionalDependencies="Debug\postgres\postgres.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\seg\seg.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\seg\seg.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Debug\seg\seg.lib"
+		ModuleDefinitionFile=".\Debug\seg\seg.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\seg\seg.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Debug\seg Win32" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\seg" IntermediateDirectory=".\Release\seg"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\seg\" ObjectFile=".\Release\seg\"
+		ProgramDataBaseFileName=".\Release\seg\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\seg\seg.dll"
+		AdditionalDependencies="Release\postgres\postgres.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\seg\seg.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\seg\seg.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Release\seg\seg.lib"
+		ModuleDefinitionFile=".\Release\seg\seg.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\seg\seg.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Release\seg Win32" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{C9B24F9E-826A-479F-8CCE-43EE9905677B}" Name="postgres" />
+ </References>
+ <Files>
+  <Filter Name="contrib" Filter="">
+   <Filter Name="seg" Filter="">
+    <File RelativePath="contrib\seg\seg.c" />
+    <File RelativePath="contrib\seg\segparse.c" />
+    <File RelativePath="contrib\seg\segparse.y"><FileConfiguration Name="Debug|Win32"><Tool Name="VCCustomBuildTool" Description="Running bison on contrib\seg\segparse.y" CommandLine="cmd /V:ON /c src\tools\msvc\pgbison.bat contrib\seg\segparse.y" AdditionalDependencies="" Outputs="contrib\seg\segparse.c" /></FileConfiguration><FileConfiguration Name="Release|Win32"><Tool Name="VCCustomBuildTool" Description="Running bison on contrib\seg\segparse.y" CommandLine="cmd /V:ON /c src\tools\msvc\pgbison.bat contrib\seg\segparse.y" AdditionalDependencies="" Outputs="contrib\seg\segparse.c" /></FileConfiguration></File>
+    <File RelativePath="contrib\seg\segscan.l"><FileConfiguration Name="Debug|Win32"><Tool Name="VCCustomBuildTool" Description="Running flex on contrib\seg\segscan.l" CommandLine="src\tools\msvc\pgflex.bat contrib\seg\segscan.l" AdditionalDependencies="" Outputs="contrib\seg\segscan.c" /></FileConfiguration><FileConfiguration Name="Release|Win32"><Tool Name="VCCustomBuildTool" Description="Running flex on contrib\seg\segscan.l" CommandLine="src\tools\msvc\pgflex.bat contrib\seg\segscan.l" AdditionalDependencies="" Outputs="contrib\seg\segscan.c" /></FileConfiguration></File>
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

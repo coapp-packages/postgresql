@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d244d4c6-2f8d-4f3f-b337-feb0c24198b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{f9991274-d0f4-468f-95ae-ea7ded68a8b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{c4d47290-a8f7-42a2-bad1-5bb4c56c5670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{ea1ef966-903e-4700-92d1-50f438106519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{9c348ea6-01ff-4b3e-91f0-4534e2062ffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\utf8_and_ascii">
+      <UniqueIdentifier>{1e096f5c-5a36-4000-8565-44c48563ed93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\utf8_and_ascii\utf8_and_ascii.c">
+      <Filter>src\backend\utils\mb\conversion_procs\utf8_and_ascii</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

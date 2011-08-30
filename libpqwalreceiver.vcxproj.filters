@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{b7d85638-2c0a-467a-aa1f-0d6591278a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{86389843-cf38-46ea-82b7-aca785c8c1ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\replication">
+      <UniqueIdentifier>{1948fc75-7a6a-41ef-af8a-e96ec58636a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\replication\libpqwalreceiver">
+      <UniqueIdentifier>{f6c16c5e-6790-40af-acc5-4ef6367a2f8a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\replication\libpqwalreceiver\libpqwalreceiver.c">
+      <Filter>src\backend\replication\libpqwalreceiver</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{a8ee4aa3-d034-4282-bf3b-d36db057c7af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pl">
+      <UniqueIdentifier>{0af66c51-9e92-4d27-b413-71ccfa66c9ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pl\plpgsql">
+      <UniqueIdentifier>{c83f6f67-162f-4153-a111-79e1b1cac15f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pl\plpgsql\src">
+      <UniqueIdentifier>{55bec257-4ec6-4949-b5b1-8d089d3fdc47}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\pl\plpgsql\src\pl_comp.c">
+      <Filter>src\pl\plpgsql\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pl\plpgsql\src\pl_exec.c">
+      <Filter>src\pl\plpgsql\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pl\plpgsql\src\pl_funcs.c">
+      <Filter>src\pl\plpgsql\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pl\plpgsql\src\pl_gram.c">
+      <Filter>src\pl\plpgsql\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pl\plpgsql\src\pl_handler.c">
+      <Filter>src\pl\plpgsql\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pl\plpgsql\src\pl_scanner.c">
+      <Filter>src\pl\plpgsql\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\pl\plpgsql\src\gram.y">
+      <Filter>src\pl\plpgsql\src</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

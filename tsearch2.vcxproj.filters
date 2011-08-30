@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{7a4c47d2-90b7-4a60-9357-ab84ec16dd3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\tsearch2">
+      <UniqueIdentifier>{eb4d1e14-d884-4392-a74a-ee8612319188}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\tsearch2\tsearch2.c">
+      <Filter>contrib\tsearch2</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

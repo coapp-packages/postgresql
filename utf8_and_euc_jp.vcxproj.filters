@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{eb2755a8-faa0-4449-b981-c0d5a00f303c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{d99c02b1-fa6b-41b7-8669-c3de7120e634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{4f10ebbd-075e-44a4-9bdf-0474460695b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{ae5597c8-e824-426d-a76e-65e3213f0967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{fa1bfed0-5f7d-4dbc-a9f6-c652fa8c65fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\utf8_and_euc_jp">
+      <UniqueIdentifier>{7b9f61cf-c8a6-454b-8ac0-eebab2926970}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\utf8_and_euc_jp\utf8_and_euc_jp.c">
+      <Filter>src\backend\utils\mb\conversion_procs\utf8_and_euc_jp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

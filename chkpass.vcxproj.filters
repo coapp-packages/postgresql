@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{5503c8a2-d6f9-403e-9125-df5b338ed93f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\chkpass">
+      <UniqueIdentifier>{f0d4ea31-4788-433e-905d-6d8d6e7c7e74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\chkpass\chkpass.c">
+      <Filter>contrib\chkpass</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

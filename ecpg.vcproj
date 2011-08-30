@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="ecpg" ProjectGUID="{1D8E5936-AFC1-45C1-9A1F-726BE8BE3D4E}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\ecpg" IntermediateDirectory=".\Debug\ecpg"
+	ConfigurationType="1" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src\interfaces\ecpg\preproc;src/include;src/include/port/win32;src/include/port/win32_msvc;src\interfaces\ecpg\include;src\interfaces\libpq"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;MAJOR_VERSION=4;MINOR_VERSION=2;PATCHLEVEL=1;ECPG_COMPILE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\ecpg\" ObjectFile=".\Debug\ecpg\"
+		ProgramDataBaseFileName=".\Debug\ecpg\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\ecpg\ecpg.exe"
+		AdditionalDependencies="Debug\libpgport\libpgport.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\ecpg\ecpg.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\ecpg\ecpg.map"
+		SubSystem="1" TargetMachine="1"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\ecpg\ecpg.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\ecpg" IntermediateDirectory=".\Release\ecpg"
+	ConfigurationType="1" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src\interfaces\ecpg\preproc;src/include;src/include/port/win32;src/include/port/win32_msvc;src\interfaces\ecpg\include;src\interfaces\libpq"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;MAJOR_VERSION=4;MINOR_VERSION=2;PATCHLEVEL=1;ECPG_COMPILE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\ecpg\" ObjectFile=".\Release\ecpg\"
+		ProgramDataBaseFileName=".\Release\ecpg\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\ecpg\ecpg.exe"
+		AdditionalDependencies="Release\libpgport\libpgport.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\ecpg\ecpg.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\ecpg\ecpg.map"
+		SubSystem="1" TargetMachine="1"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\ecpg\ecpg.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{2778BBF8-4D6F-4B58-ACCA-033CAB83E87E}" Name="libpgport" />
+ </References>
+ <Files>
+  <Filter Name="src" Filter="">
+   <Filter Name="backend" Filter="">
+    <Filter Name="parser" Filter="">
+     <File RelativePath="src\backend\parser\kwlookup.c" />
+    </Filter>
+   </Filter>
+   <Filter Name="interfaces" Filter="">
+    <Filter Name="ecpg" Filter="">
+     <Filter Name="preproc" Filter="">
+      <Filter Name=".." Filter="">
+       <Filter Name="ecpglib" Filter="">
+        <File RelativePath="src\interfaces\ecpg\preproc\..\ecpglib\typename.c" />
+       </Filter>
+      </Filter>
+      <File RelativePath="src\interfaces\ecpg\preproc\c_keywords.c" />
+      <File RelativePath="src\interfaces\ecpg\preproc\descriptor.c" />
+      <File RelativePath="src\interfaces\ecpg\preproc\ecpg.c" />
+      <File RelativePath="src\interfaces\ecpg\preproc\ecpg_keywords.c" />
+      <File RelativePath="src\interfaces\ecpg\preproc\keywords.c" />
+      <File RelativePath="src\interfaces\ecpg\preproc\output.c" />
+      <File RelativePath="src\interfaces\ecpg\preproc\parser.c" />
+      <File RelativePath="src\interfaces\ecpg\preproc\pgc.l"><FileConfiguration Name="Debug|Win32"><Tool Name="VCCustomBuildTool" Description="Running flex on src\interfaces\ecpg\preproc\pgc.l" CommandLine="src\tools\msvc\pgflex.bat src\interfaces\ecpg\preproc\pgc.l" AdditionalDependencies="" Outputs="src\interfaces\ecpg\preproc\pgc.c" /></FileConfiguration><FileConfiguration Name="Release|Win32"><Tool Name="VCCustomBuildTool" Description="Running flex on src\interfaces\ecpg\preproc\pgc.l" CommandLine="src\tools\msvc\pgflex.bat src\interfaces\ecpg\preproc\pgc.l" AdditionalDependencies="" Outputs="src\interfaces\ecpg\preproc\pgc.c" /></FileConfiguration></File>
+      <File RelativePath="src\interfaces\ecpg\preproc\preproc.c" />
+      <File RelativePath="src\interfaces\ecpg\preproc\preproc.y"><FileConfiguration Name="Debug|Win32"><Tool Name="VCCustomBuildTool" Description="Running bison on src\interfaces\ecpg\preproc\preproc.y" CommandLine="cmd /V:ON /c src\tools\msvc\pgbison.bat src\interfaces\ecpg\preproc\preproc.y" AdditionalDependencies="" Outputs="src\interfaces\ecpg\preproc\preproc.c" /></FileConfiguration><FileConfiguration Name="Release|Win32"><Tool Name="VCCustomBuildTool" Description="Running bison on src\interfaces\ecpg\preproc\preproc.y" CommandLine="cmd /V:ON /c src\tools\msvc\pgbison.bat src\interfaces\ecpg\preproc\preproc.y" AdditionalDependencies="" Outputs="src\interfaces\ecpg\preproc\preproc.c" /></FileConfiguration></File>
+      <File RelativePath="src\interfaces\ecpg\preproc\type.c" />
+      <File RelativePath="src\interfaces\ecpg\preproc\variable.c" />
+      <File RelativePath="src\interfaces\ecpg\preproc\win32ver.rc" />
+     </Filter>
+    </Filter>
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

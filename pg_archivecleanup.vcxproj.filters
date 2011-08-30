@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{ffb28277-fbc6-497d-b3da-6c456db4f29b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\pg_archivecleanup">
+      <UniqueIdentifier>{eaaac0b2-de42-4e65-bcbd-c1196901710d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\pg_archivecleanup\pg_archivecleanup.c">
+      <Filter>contrib\pg_archivecleanup</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

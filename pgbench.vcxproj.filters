@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{619e0917-6395-4918-a35c-65b08d97d00d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\pgbench">
+      <UniqueIdentifier>{e35a00d4-35ef-400e-ac40-ef72788b1fe9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\pgbench\pgbench.c">
+      <Filter>contrib\pgbench</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="pgevent" ProjectGUID="{E07ADDA5-A945-46C2-9E74-996FE487C22B}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\pgevent" IntermediateDirectory=".\Debug\pgevent"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\pgevent\" ObjectFile=".\Debug\pgevent\"
+		ProgramDataBaseFileName=".\Debug\pgevent\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\pgevent\pgevent.dll"
+		AdditionalDependencies=""
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\pgevent\pgevent.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\pgevent\pgevent.map"
+		SubSystem="1" TargetMachine="1"
+		AdditionalOptions="/ignore:4104"
+		ModuleDefinitionFile="src\bin\pgevent\pgevent.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\pgevent\pgevent.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\pgevent" IntermediateDirectory=".\Release\pgevent"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\pgevent\" ObjectFile=".\Release\pgevent\"
+		ProgramDataBaseFileName=".\Release\pgevent\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\pgevent\pgevent.dll"
+		AdditionalDependencies=""
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\pgevent\pgevent.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\pgevent\pgevent.map"
+		SubSystem="1" TargetMachine="1"
+		AdditionalOptions="/ignore:4104"
+		ModuleDefinitionFile="src\bin\pgevent\pgevent.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\pgevent\pgevent.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+ </Configurations>
+ <References>
+ </References>
+ <Files>
+  <Filter Name="src" Filter="">
+   <Filter Name="bin" Filter="">
+    <Filter Name="pgevent" Filter="">
+     <File RelativePath="src\bin\pgevent\pgevent.c" />
+     <File RelativePath="src\bin\pgevent\pgmsgevent.rc" />
+    </Filter>
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

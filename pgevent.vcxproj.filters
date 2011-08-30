@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f739cc5a-4d37-4b93-808e-ed27c598393c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin">
+      <UniqueIdentifier>{1f1fc274-5e42-474c-8981-1b89eac7c10c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\pgevent">
+      <UniqueIdentifier>{e43ed211-1cba-440c-8a3b-4283aa923296}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bin\pgevent\pgevent.c">
+      <Filter>src\bin\pgevent</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\bin\pgevent\pgmsgevent.rc">
+      <Filter>src\bin\pgevent</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

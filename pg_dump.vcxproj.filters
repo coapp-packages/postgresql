@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{e0cfa46c-1f15-41a4-8597-c2d6c62b904a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{2a7b9ec9-526f-4c1b-9b6e-36e29d87c2bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\parser">
+      <UniqueIdentifier>{309d2c95-d4a9-4bff-a224-74d5b4a94b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin">
+      <UniqueIdentifier>{7a509e95-5103-402c-81fb-d9bb98571bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\pg_dump">
+      <UniqueIdentifier>{0cd1f761-8798-461d-9a58-c075ae42c39d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\parser\kwlookup.c">
+      <Filter>src\backend\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\common.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\dumputils.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\keywords.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\pg_backup_archiver.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\pg_backup_custom.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\pg_backup_db.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\pg_backup_files.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\pg_backup_null.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\pg_backup_tar.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\pg_dump.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\pg_dump_sort.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\bin\pg_dump\win32ver.rc">
+      <Filter>src\bin\pg_dump</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{66db254c-7e06-43cf-ac52-7e54df9b4ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces">
+      <UniqueIdentifier>{2b953b72-8c7d-4f0c-91f7-dc9ed163be48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\ecpg">
+      <UniqueIdentifier>{ee552db5-808b-4efe-b5c6-02293e8aeb8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\ecpg\pgtypeslib">
+      <UniqueIdentifier>{5bfc4d8f-cebb-4bb3-96a9-b268b0d6273c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\port">
+      <UniqueIdentifier>{bded9d16-afc1-4122-97e4-778ff9ef9c89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\interfaces\ecpg\pgtypeslib\common.c">
+      <Filter>src\interfaces\ecpg\pgtypeslib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\pgtypeslib\datetime.c">
+      <Filter>src\interfaces\ecpg\pgtypeslib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\pgtypeslib\dt_common.c">
+      <Filter>src\interfaces\ecpg\pgtypeslib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\pgtypeslib\interval.c">
+      <Filter>src\interfaces\ecpg\pgtypeslib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\pgtypeslib\numeric.c">
+      <Filter>src\interfaces\ecpg\pgtypeslib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\pgtypeslib\timestamp.c">
+      <Filter>src\interfaces\ecpg\pgtypeslib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\pgstrcasecmp.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

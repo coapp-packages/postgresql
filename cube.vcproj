@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="cube" ProjectGUID="{E4BDBD22-604C-47AA-BD21-DEB6489B40F1}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\cube" IntermediateDirectory=".\Debug\cube"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\cube\" ObjectFile=".\Debug\cube\"
+		ProgramDataBaseFileName=".\Debug\cube\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\cube\cube.dll"
+		AdditionalDependencies="Debug\postgres\postgres.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\cube\cube.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\cube\cube.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Debug\cube\cube.lib"
+		ModuleDefinitionFile=".\Debug\cube\cube.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\cube\cube.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Debug\cube Win32" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\cube" IntermediateDirectory=".\Release\cube"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\cube\" ObjectFile=".\Release\cube\"
+		ProgramDataBaseFileName=".\Release\cube\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\cube\cube.dll"
+		AdditionalDependencies="Release\postgres\postgres.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\cube\cube.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\cube\cube.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Release\cube\cube.lib"
+		ModuleDefinitionFile=".\Release\cube\cube.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\cube\cube.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Release\cube Win32" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{C9B24F9E-826A-479F-8CCE-43EE9905677B}" Name="postgres" />
+ </References>
+ <Files>
+  <Filter Name="contrib" Filter="">
+   <Filter Name="cube" Filter="">
+    <File RelativePath="contrib\cube\cube.c" />
+    <File RelativePath="contrib\cube\cubeparse.c" />
+    <File RelativePath="contrib\cube\cubeparse.y"><FileConfiguration Name="Debug|Win32"><Tool Name="VCCustomBuildTool" Description="Running bison on contrib\cube\cubeparse.y" CommandLine="cmd /V:ON /c src\tools\msvc\pgbison.bat contrib\cube\cubeparse.y" AdditionalDependencies="" Outputs="contrib\cube\cubeparse.c" /></FileConfiguration><FileConfiguration Name="Release|Win32"><Tool Name="VCCustomBuildTool" Description="Running bison on contrib\cube\cubeparse.y" CommandLine="cmd /V:ON /c src\tools\msvc\pgbison.bat contrib\cube\cubeparse.y" AdditionalDependencies="" Outputs="contrib\cube\cubeparse.c" /></FileConfiguration></File>
+    <File RelativePath="contrib\cube\cubescan.l"><FileConfiguration Name="Debug|Win32"><Tool Name="VCCustomBuildTool" Description="Running flex on contrib\cube\cubescan.l" CommandLine="src\tools\msvc\pgflex.bat contrib\cube\cubescan.l" AdditionalDependencies="" Outputs="contrib\cube\cubescan.c" /></FileConfiguration><FileConfiguration Name="Release|Win32"><Tool Name="VCCustomBuildTool" Description="Running flex on contrib\cube\cubescan.l" CommandLine="src\tools\msvc\pgflex.bat contrib\cube\cubescan.l" AdditionalDependencies="" Outputs="contrib\cube\cubescan.c" /></FileConfiguration></File>
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

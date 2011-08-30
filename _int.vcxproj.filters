@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{e8755363-29a8-4963-8077-7d332374b434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\intarray">
+      <UniqueIdentifier>{8d591c16-e58d-4074-9d03-b51e452aa526}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\intarray\_int_bool.c">
+      <Filter>contrib\intarray</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\intarray\_int_gin.c">
+      <Filter>contrib\intarray</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\intarray\_int_gist.c">
+      <Filter>contrib\intarray</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\intarray\_int_op.c">
+      <Filter>contrib\intarray</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\intarray\_int_tool.c">
+      <Filter>contrib\intarray</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\intarray\_intbig_gist.c">
+      <Filter>contrib\intarray</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{4b9bd5a2-0f3a-4ed9-b725-c829386a9233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\spi">
+      <UniqueIdentifier>{9a1fb004-297e-4455-a7ed-9a691d639bd0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\spi\autoinc.c">
+      <Filter>contrib\spi</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

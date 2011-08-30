@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{64ad15d0-f6bb-4ae4-90b2-6e8812f741c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\oid2name">
+      <UniqueIdentifier>{90873c33-ccb5-4d68-996d-b42c126be773}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\oid2name\oid2name.c">
+      <Filter>contrib\oid2name</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

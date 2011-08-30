@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{7a5fbf7b-d419-4f50-bacd-7b3daaf03f72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\cube">
+      <UniqueIdentifier>{4e099a41-532e-42d9-9180-4f3c312aa25c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\cube\cube.c">
+      <Filter>contrib\cube</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\cube\cubeparse.c">
+      <Filter>contrib\cube</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="contrib\cube\cubeparse.y">
+      <Filter>contrib\cube</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contrib\cube\cubescan.l">
+      <Filter>contrib\cube</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

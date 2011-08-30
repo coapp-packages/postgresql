@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{d6541682-0bcd-468e-8711-42875a455e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\pg_trgm">
+      <UniqueIdentifier>{3476aa11-50a5-4aa7-b7d8-d397cbf0435f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\pg_trgm\trgm_gin.c">
+      <Filter>contrib\pg_trgm</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_trgm\trgm_gist.c">
+      <Filter>contrib\pg_trgm</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_trgm\trgm_op.c">
+      <Filter>contrib\pg_trgm</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

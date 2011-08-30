@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{fd5bb23c-a495-4fec-be70-f471af6e6667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\pg_upgrade">
+      <UniqueIdentifier>{d679a945-43f5-4e1d-812f-ce4224f0ffc2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\pg_upgrade\check.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\controldata.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\dump.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\exec.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\file.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\function.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\info.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\option.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\page.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\pg_upgrade.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\relfilenode.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\server.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\tablespace.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\util.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\version.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pg_upgrade\version_old_8_3.c">
+      <Filter>contrib\pg_upgrade</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

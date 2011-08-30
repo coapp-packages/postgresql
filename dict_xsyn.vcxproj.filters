@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{d45455d8-c582-4240-ba98-05fd90c0711a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\dict_xsyn">
+      <UniqueIdentifier>{6cdfafd4-91d8-4531-8953-7162342c1f9a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\dict_xsyn\dict_xsyn.c">
+      <Filter>contrib\dict_xsyn</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

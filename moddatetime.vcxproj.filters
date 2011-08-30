@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{e52ba25c-2cac-43f6-9467-9188904b7d16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\spi">
+      <UniqueIdentifier>{52e3a9fd-0e3a-48f9-8236-4a69ab855f0d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\spi\moddatetime.c">
+      <Filter>contrib\spi</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

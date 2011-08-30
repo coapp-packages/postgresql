@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{aae665e6-d08d-4d58-ab73-cb42da7c59fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\dblink">
+      <UniqueIdentifier>{26a7c35e-5544-418e-8f99-b478e1738a6d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\dblink\dblink.c">
+      <Filter>contrib\dblink</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="pg_regress_ecpg" ProjectGUID="{4C3789D7-3B76-4B6E-8A6F-33106D62F61F}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\pg_regress_ecpg" IntermediateDirectory=".\Debug\pg_regress_ecpg"
+	ConfigurationType="1" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\port;src\test\regress"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HOST_TUPLE=&quot;&quot;i686-pc-win32vc&quot;&quot;;FRONTEND;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\pg_regress_ecpg\" ObjectFile=".\Debug\pg_regress_ecpg\"
+		ProgramDataBaseFileName=".\Debug\pg_regress_ecpg\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\pg_regress_ecpg\pg_regress_ecpg.exe"
+		AdditionalDependencies="Debug\libpgport\libpgport.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\pg_regress_ecpg\pg_regress_ecpg.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\pg_regress_ecpg\pg_regress_ecpg.map"
+		SubSystem="1" TargetMachine="1"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\pg_regress_ecpg\pg_regress_ecpg.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\pg_regress_ecpg" IntermediateDirectory=".\Release\pg_regress_ecpg"
+	ConfigurationType="1" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\port;src\test\regress"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;HOST_TUPLE=&quot;&quot;i686-pc-win32vc&quot;&quot;;FRONTEND;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\pg_regress_ecpg\" ObjectFile=".\Release\pg_regress_ecpg\"
+		ProgramDataBaseFileName=".\Release\pg_regress_ecpg\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\pg_regress_ecpg\pg_regress_ecpg.exe"
+		AdditionalDependencies="Release\libpgport\libpgport.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\pg_regress_ecpg\pg_regress_ecpg.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\pg_regress_ecpg\pg_regress_ecpg.map"
+		SubSystem="1" TargetMachine="1"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\pg_regress_ecpg\pg_regress_ecpg.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{2778BBF8-4D6F-4B58-ACCA-033CAB83E87E}" Name="libpgport" />
+ </References>
+ <Files>
+  <Filter Name="src" Filter="">
+   <Filter Name="interfaces" Filter="">
+    <Filter Name="ecpg" Filter="">
+     <Filter Name="test" Filter="">
+      <File RelativePath="src\interfaces\ecpg\test\pg_regress_ecpg.c" />
+     </Filter>
+    </Filter>
+   </Filter>
+   <Filter Name="test" Filter="">
+    <Filter Name="regress" Filter="">
+     <File RelativePath="src\test\regress\pg_regress.c" />
+    </Filter>
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

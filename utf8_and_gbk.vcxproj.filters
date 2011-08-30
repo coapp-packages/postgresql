@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{a9c5d0c0-b301-4ef8-95c5-3f18cfae6164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{75a1494d-39f2-44d2-af36-4da281ebf267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{beb990ba-320a-4a3c-bdab-99e1a9a6752c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{6541fa94-7f02-4ad0-bd4d-96eb9b76debb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{a9fbb0e7-4fc9-48c5-8cb0-7a63d7d7b883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\utf8_and_gbk">
+      <UniqueIdentifier>{2beb9668-e9ef-4ec5-830b-7f3f721b5863}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\utf8_and_gbk\utf8_and_gbk.c">
+      <Filter>src\backend\utils\mb\conversion_procs\utf8_and_gbk</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

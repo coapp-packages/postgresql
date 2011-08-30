@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="dict_xsyn" ProjectGUID="{8EF86AE9-2E13-448B-B7BC-B660571D0493}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\dict_xsyn" IntermediateDirectory=".\Debug\dict_xsyn"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\dict_xsyn\" ObjectFile=".\Debug\dict_xsyn\"
+		ProgramDataBaseFileName=".\Debug\dict_xsyn\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\dict_xsyn\dict_xsyn.dll"
+		AdditionalDependencies="Debug\postgres\postgres.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\dict_xsyn\dict_xsyn.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\dict_xsyn\dict_xsyn.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Debug\dict_xsyn\dict_xsyn.lib"
+		ModuleDefinitionFile=".\Debug\dict_xsyn\dict_xsyn.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\dict_xsyn\dict_xsyn.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Debug\dict_xsyn Win32" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\dict_xsyn" IntermediateDirectory=".\Release\dict_xsyn"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\dict_xsyn\" ObjectFile=".\Release\dict_xsyn\"
+		ProgramDataBaseFileName=".\Release\dict_xsyn\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\dict_xsyn\dict_xsyn.dll"
+		AdditionalDependencies="Release\postgres\postgres.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\dict_xsyn\dict_xsyn.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\dict_xsyn\dict_xsyn.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Release\dict_xsyn\dict_xsyn.lib"
+		ModuleDefinitionFile=".\Release\dict_xsyn\dict_xsyn.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\dict_xsyn\dict_xsyn.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Release\dict_xsyn Win32" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{C9B24F9E-826A-479F-8CCE-43EE9905677B}" Name="postgres" />
+ </References>
+ <Files>
+  <Filter Name="contrib" Filter="">
+   <Filter Name="dict_xsyn" Filter="">
+    <File RelativePath="contrib\dict_xsyn\dict_xsyn.c" />
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

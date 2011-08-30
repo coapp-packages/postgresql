@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{dbebf867-65f2-4862-b817-1fed53a49e6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{81d1f3fe-75f8-4027-952f-535223b20024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{6dbbc103-5c9d-487b-b04d-98d656ec17c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{4705f521-0995-4a2d-bf9a-61beb4f4e681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin">
+      <UniqueIdentifier>{d7fec298-6839-4941-920b-ede89d910752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\initdb">
+      <UniqueIdentifier>{067bdbb9-6ab1-448a-a3bb-d5ee90d69e4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces">
+      <UniqueIdentifier>{11540328-cec3-4c7b-ad86-344a255a6989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\libpq">
+      <UniqueIdentifier>{4afba76d-8ee7-411c-a334-e6c5f7235abe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\encnames.c">
+      <Filter>src\backend\utils\mb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\initdb\initdb.c">
+      <Filter>src\bin\initdb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\pqsignal.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\bin\initdb\win32ver.rc">
+      <Filter>src\bin\initdb</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

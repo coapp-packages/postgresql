@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{9e8114d9-27b4-4b68-a118-d0b8434bd094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces">
+      <UniqueIdentifier>{8ce2af7c-764f-45a5-bec4-35a05f56af31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\ecpg">
+      <UniqueIdentifier>{85f08097-54ef-4d84-8e02-a228bb131e90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\ecpg\ecpglib">
+      <UniqueIdentifier>{431774e8-a308-4059-a749-0563809da80f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\port">
+      <UniqueIdentifier>{e2c0e693-4f83-4113-89c9-6050e3384e90}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\interfaces\ecpg\ecpglib\connect.c">
+      <Filter>src\interfaces\ecpg\ecpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\ecpglib\data.c">
+      <Filter>src\interfaces\ecpg\ecpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\ecpglib\descriptor.c">
+      <Filter>src\interfaces\ecpg\ecpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\ecpglib\error.c">
+      <Filter>src\interfaces\ecpg\ecpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\ecpglib\execute.c">
+      <Filter>src\interfaces\ecpg\ecpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\ecpglib\memory.c">
+      <Filter>src\interfaces\ecpg\ecpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\ecpglib\misc.c">
+      <Filter>src\interfaces\ecpg\ecpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\ecpglib\prepare.c">
+      <Filter>src\interfaces\ecpg\ecpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\ecpglib\sqlda.c">
+      <Filter>src\interfaces\ecpg\ecpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\ecpglib\typename.c">
+      <Filter>src\interfaces\ecpg\ecpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\path.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\pgstrcasecmp.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\thread.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{8ec5ad32-ae8d-4269-b9e6-d4570babb19d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\pgcrypto">
+      <UniqueIdentifier>{b4702ec6-72f8-4a05-a2ed-e02d826b6b39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\pgcrypto\blf.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\crypt-blowfish.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\crypt-des.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\crypt-gensalt.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\crypt-md5.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\fortuna.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\imath.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\internal-sha2.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\internal.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\mbuf.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\md5.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgcrypto.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-armor.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-cfb.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-compress.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-decrypt.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-encrypt.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-info.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-mpi-internal.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-mpi.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-pgsql.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-pubdec.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-pubenc.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-pubkey.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp-s2k.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\pgp.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\px-crypt.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\px-hmac.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\px.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\random.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\rijndael.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\sha1.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\pgcrypto\sha2.c">
+      <Filter>contrib\pgcrypto</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

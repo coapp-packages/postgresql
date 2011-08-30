@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{306ca077-13c7-42f0-bb37-bbbc057761b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{72b531b0-ea26-4c5e-a607-80a8391e1b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\parser">
+      <UniqueIdentifier>{211c42dd-9c5d-4259-9a1a-aadae1ec1adf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces">
+      <UniqueIdentifier>{b8682448-8cf8-4fbb-9714-e982c8f39da9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\ecpg">
+      <UniqueIdentifier>{b6c492e3-85a2-445f-b39d-719b3b8b9620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\ecpg\preproc">
+      <UniqueIdentifier>{cf254991-fd55-4ce9-abd7-bf3951caa21c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\ecpg\preproc\..">
+      <UniqueIdentifier>{18d61c94-cbbf-4eda-b51a-f5a19c31c347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\ecpg\preproc\..\ecpglib">
+      <UniqueIdentifier>{713e39fc-81d7-487a-a24d-15278400e6a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\parser\kwlookup.c">
+      <Filter>src\backend\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\ecpglib\typename.c">
+      <Filter>src\interfaces\ecpg\preproc\..\ecpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\preproc\c_keywords.c">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\preproc\descriptor.c">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\preproc\ecpg.c">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\preproc\ecpg_keywords.c">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\preproc\keywords.c">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\preproc\output.c">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\preproc\parser.c">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\preproc\preproc.c">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\preproc\type.c">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\ecpg\preproc\variable.c">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\interfaces\ecpg\preproc\win32ver.rc">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\interfaces\ecpg\preproc\pgc.l">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\interfaces\ecpg\preproc\preproc.y">
+      <Filter>src\interfaces\ecpg\preproc</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

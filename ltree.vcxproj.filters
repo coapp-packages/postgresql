@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{175df82f-a75c-4eeb-804f-c431ff1035b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\ltree">
+      <UniqueIdentifier>{bedda407-6e88-435b-8b1c-342d4c18b0e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\ltree\_ltree_gist.c">
+      <Filter>contrib\ltree</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\ltree\_ltree_op.c">
+      <Filter>contrib\ltree</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\ltree\crc32.c">
+      <Filter>contrib\ltree</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\ltree\lquery_op.c">
+      <Filter>contrib\ltree</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\ltree\ltree_gist.c">
+      <Filter>contrib\ltree</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\ltree\ltree_io.c">
+      <Filter>contrib\ltree</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\ltree\ltree_op.c">
+      <Filter>contrib\ltree</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\ltree\ltxtquery_io.c">
+      <Filter>contrib\ltree</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\ltree\ltxtquery_op.c">
+      <Filter>contrib\ltree</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

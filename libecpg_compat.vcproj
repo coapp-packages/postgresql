@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="libecpg_compat" ProjectGUID="{DC1CD693-3211-4065-BC83-99A6CBE2FED9}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\libecpg_compat" IntermediateDirectory=".\Debug\libecpg_compat"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\interfaces\ecpg\include;src\interfaces\libpq"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\libecpg_compat\" ObjectFile=".\Debug\libecpg_compat\"
+		ProgramDataBaseFileName=".\Debug\libecpg_compat\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\libecpg_compat\libecpg_compat.dll"
+		AdditionalDependencies="Debug\libpgtypes\libpgtypes.lib Debug\libecpg\libecpg.lib Debug\libpgport\libpgport.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\libecpg_compat\libecpg_compat.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\libecpg_compat\libecpg_compat.map"
+		SubSystem="1" TargetMachine="1"
+		ModuleDefinitionFile="src\interfaces\ecpg\compatlib\compatlib.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\libecpg_compat\libecpg_compat.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\libecpg_compat" IntermediateDirectory=".\Release\libecpg_compat"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\interfaces\ecpg\include;src\interfaces\libpq"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\libecpg_compat\" ObjectFile=".\Release\libecpg_compat\"
+		ProgramDataBaseFileName=".\Release\libecpg_compat\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\libecpg_compat\libecpg_compat.dll"
+		AdditionalDependencies="Release\libpgtypes\libpgtypes.lib Release\libecpg\libecpg.lib Release\libpgport\libpgport.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\libecpg_compat\libecpg_compat.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\libecpg_compat\libecpg_compat.map"
+		SubSystem="1" TargetMachine="1"
+		ModuleDefinitionFile="src\interfaces\ecpg\compatlib\compatlib.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\libecpg_compat\libecpg_compat.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{BB7F9061-817D-4A7D-BA79-69FC7CB0A9B2}" Name="libpgtypes" />
+  <ProjectReference ReferencedProjectIdentifier="{4D4100D5-2885-4ECD-8E9E-384FA76FC4FE}" Name="libecpg" />
+  <ProjectReference ReferencedProjectIdentifier="{2778BBF8-4D6F-4B58-ACCA-033CAB83E87E}" Name="libpgport" />
+ </References>
+ <Files>
+  <Filter Name="src" Filter="">
+   <Filter Name="interfaces" Filter="">
+    <Filter Name="ecpg" Filter="">
+     <Filter Name="compatlib" Filter="">
+      <File RelativePath="src\interfaces\ecpg\compatlib\informix.c" />
+     </Filter>
+    </Filter>
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

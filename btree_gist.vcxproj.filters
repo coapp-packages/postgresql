@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{4742c4b9-8c41-4a98-9297-81d072a9573a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\btree_gist">
+      <UniqueIdentifier>{74ab3ec4-0f65-430f-b217-622c7cdea6da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\btree_gist\btree_bit.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_bytea.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_cash.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_date.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_float4.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_float8.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_gist.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_inet.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_int2.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_int4.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_int8.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_interval.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_macaddr.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_numeric.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_oid.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_text.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_time.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_ts.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_utils_num.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\btree_gist\btree_utils_var.c">
+      <Filter>contrib\btree_gist</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

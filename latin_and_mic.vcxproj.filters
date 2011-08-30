@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{fb4eb727-2d58-404f-b501-6a980acda7ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{7664e70a-9870-445f-9a43-7de3a4a731e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{6125df53-fdc2-4c58-9430-2d1e17934ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{936cbcf9-2f05-4186-b195-56cde9d82e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{4fe6a94b-b3d9-4fd7-a9f7-3d656e5c3ced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\latin_and_mic">
+      <UniqueIdentifier>{a8bb5c9b-1711-4964-acbd-28831d0b8842}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\latin_and_mic\latin_and_mic.c">
+      <Filter>src\backend\utils\mb\conversion_procs\latin_and_mic</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="btree_gist" ProjectGUID="{66A0B6F9-BC59-4CC5-A3AB-E57FF28EAB5B}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\btree_gist" IntermediateDirectory=".\Debug\btree_gist"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\btree_gist\" ObjectFile=".\Debug\btree_gist\"
+		ProgramDataBaseFileName=".\Debug\btree_gist\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\btree_gist\btree_gist.dll"
+		AdditionalDependencies="Debug\postgres\postgres.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\btree_gist\btree_gist.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\btree_gist\btree_gist.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Debug\btree_gist\btree_gist.lib"
+		ModuleDefinitionFile=".\Debug\btree_gist\btree_gist.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\btree_gist\btree_gist.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Debug\btree_gist Win32" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\btree_gist" IntermediateDirectory=".\Release\btree_gist"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\btree_gist\" ObjectFile=".\Release\btree_gist\"
+		ProgramDataBaseFileName=".\Release\btree_gist\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\btree_gist\btree_gist.dll"
+		AdditionalDependencies="Release\postgres\postgres.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\btree_gist\btree_gist.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\btree_gist\btree_gist.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Release\btree_gist\btree_gist.lib"
+		ModuleDefinitionFile=".\Release\btree_gist\btree_gist.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\btree_gist\btree_gist.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Release\btree_gist Win32" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{C9B24F9E-826A-479F-8CCE-43EE9905677B}" Name="postgres" />
+ </References>
+ <Files>
+  <Filter Name="contrib" Filter="">
+   <Filter Name="btree_gist" Filter="">
+    <File RelativePath="contrib\btree_gist\btree_bit.c" />
+    <File RelativePath="contrib\btree_gist\btree_bytea.c" />
+    <File RelativePath="contrib\btree_gist\btree_cash.c" />
+    <File RelativePath="contrib\btree_gist\btree_date.c" />
+    <File RelativePath="contrib\btree_gist\btree_float4.c" />
+    <File RelativePath="contrib\btree_gist\btree_float8.c" />
+    <File RelativePath="contrib\btree_gist\btree_gist.c" />
+    <File RelativePath="contrib\btree_gist\btree_inet.c" />
+    <File RelativePath="contrib\btree_gist\btree_int2.c" />
+    <File RelativePath="contrib\btree_gist\btree_int4.c" />
+    <File RelativePath="contrib\btree_gist\btree_int8.c" />
+    <File RelativePath="contrib\btree_gist\btree_interval.c" />
+    <File RelativePath="contrib\btree_gist\btree_macaddr.c" />
+    <File RelativePath="contrib\btree_gist\btree_numeric.c" />
+    <File RelativePath="contrib\btree_gist\btree_oid.c" />
+    <File RelativePath="contrib\btree_gist\btree_text.c" />
+    <File RelativePath="contrib\btree_gist\btree_time.c" />
+    <File RelativePath="contrib\btree_gist\btree_ts.c" />
+    <File RelativePath="contrib\btree_gist\btree_utils_num.c" />
+    <File RelativePath="contrib\btree_gist\btree_utils_var.c" />
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

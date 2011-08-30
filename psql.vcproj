@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="psql" ProjectGUID="{911349D1-43CD-4880-8B40-9A4D600BA809}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\psql" IntermediateDirectory=".\Debug\psql"
+	ConfigurationType="1" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\interfaces\libpq;src\bin\pg_dump;src\backend"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\psql\" ObjectFile=".\Debug\psql\"
+		ProgramDataBaseFileName=".\Debug\psql\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\psql\psql.exe"
+		AdditionalDependencies="Debug\libpgport\libpgport.lib Debug\libpq\libpq.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\psql\psql.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\psql\psql.map"
+		SubSystem="1" TargetMachine="1"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\psql\psql.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\psql" IntermediateDirectory=".\Release\psql"
+	ConfigurationType="1" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\interfaces\libpq;src\bin\pg_dump;src\backend"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\psql\" ObjectFile=".\Release\psql\"
+		ProgramDataBaseFileName=".\Release\psql\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\psql\psql.exe"
+		AdditionalDependencies="Release\libpgport\libpgport.lib Release\libpq\libpq.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\psql\psql.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\psql\psql.map"
+		SubSystem="1" TargetMachine="1"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\psql\psql.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{2778BBF8-4D6F-4B58-ACCA-033CAB83E87E}" Name="libpgport" />
+  <ProjectReference ReferencedProjectIdentifier="{552FACB6-F7A2-490B-B3B5-CEB54072232E}" Name="libpq" />
+ </References>
+ <Files>
+  <Filter Name="src" Filter="">
+   <Filter Name="backend" Filter="">
+    <Filter Name="parser" Filter="">
+     <File RelativePath="src\backend\parser\kwlookup.c" />
+    </Filter>
+   </Filter>
+   <Filter Name="bin" Filter="">
+    <Filter Name="pg_dump" Filter="">
+     <File RelativePath="src\bin\pg_dump\dumputils.c" />
+     <File RelativePath="src\bin\pg_dump\keywords.c" />
+    </Filter>
+    <Filter Name="psql" Filter="">
+     <File RelativePath="src\bin\psql\command.c" />
+     <File RelativePath="src\bin\psql\common.c" />
+     <File RelativePath="src\bin\psql\copy.c" />
+     <File RelativePath="src\bin\psql\describe.c" />
+     <File RelativePath="src\bin\psql\help.c" />
+     <File RelativePath="src\bin\psql\input.c" />
+     <File RelativePath="src\bin\psql\large_obj.c" />
+     <File RelativePath="src\bin\psql\mainloop.c" />
+     <File RelativePath="src\bin\psql\mbprint.c" />
+     <File RelativePath="src\bin\psql\print.c" />
+     <File RelativePath="src\bin\psql\prompt.c" />
+     <File RelativePath="src\bin\psql\psqlscan.l"><FileConfiguration Name="Debug|Win32"><Tool Name="VCCustomBuildTool" Description="Running flex on src\bin\psql\psqlscan.l" CommandLine="src\tools\msvc\pgflex.bat src\bin\psql\psqlscan.l" AdditionalDependencies="" Outputs="src\bin\psql\psqlscan.c" /></FileConfiguration><FileConfiguration Name="Release|Win32"><Tool Name="VCCustomBuildTool" Description="Running flex on src\bin\psql\psqlscan.l" CommandLine="src\tools\msvc\pgflex.bat src\bin\psql\psqlscan.l" AdditionalDependencies="" Outputs="src\bin\psql\psqlscan.c" /></FileConfiguration></File>
+     <File RelativePath="src\bin\psql\sql_help.c" />
+     <File RelativePath="src\bin\psql\startup.c" />
+     <File RelativePath="src\bin\psql\stringutils.c" />
+     <File RelativePath="src\bin\psql\tab-complete.c" />
+     <File RelativePath="src\bin\psql\variables.c" />
+     <File RelativePath="src\bin\psql\win32ver.rc" />
+    </Filter>
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

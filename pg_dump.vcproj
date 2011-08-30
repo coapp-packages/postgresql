@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="pg_dump" ProjectGUID="{99993686-6809-4F27-9D8D-6595A64A9E37}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\pg_dump" IntermediateDirectory=".\Debug\pg_dump"
+	ConfigurationType="1" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\interfaces\libpq;src\backend"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\pg_dump\" ObjectFile=".\Debug\pg_dump\"
+		ProgramDataBaseFileName=".\Debug\pg_dump\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\pg_dump\pg_dump.exe"
+		AdditionalDependencies="Debug\libpgport\libpgport.lib Debug\libpq\libpq.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\pg_dump\pg_dump.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\pg_dump\pg_dump.map"
+		SubSystem="1" TargetMachine="1"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\pg_dump\pg_dump.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\pg_dump" IntermediateDirectory=".\Release\pg_dump"
+	ConfigurationType="1" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\interfaces\libpq;src\backend"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\pg_dump\" ObjectFile=".\Release\pg_dump\"
+		ProgramDataBaseFileName=".\Release\pg_dump\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\pg_dump\pg_dump.exe"
+		AdditionalDependencies="Release\libpgport\libpgport.lib Release\libpq\libpq.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\pg_dump\pg_dump.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\pg_dump\pg_dump.map"
+		SubSystem="1" TargetMachine="1"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\pg_dump\pg_dump.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{2778BBF8-4D6F-4B58-ACCA-033CAB83E87E}" Name="libpgport" />
+  <ProjectReference ReferencedProjectIdentifier="{552FACB6-F7A2-490B-B3B5-CEB54072232E}" Name="libpq" />
+ </References>
+ <Files>
+  <Filter Name="src" Filter="">
+   <Filter Name="backend" Filter="">
+    <Filter Name="parser" Filter="">
+     <File RelativePath="src\backend\parser\kwlookup.c" />
+    </Filter>
+   </Filter>
+   <Filter Name="bin" Filter="">
+    <Filter Name="pg_dump" Filter="">
+     <File RelativePath="src\bin\pg_dump\common.c" />
+     <File RelativePath="src\bin\pg_dump\dumputils.c" />
+     <File RelativePath="src\bin\pg_dump\keywords.c" />
+     <File RelativePath="src\bin\pg_dump\pg_backup_archiver.c" />
+     <File RelativePath="src\bin\pg_dump\pg_backup_custom.c" />
+     <File RelativePath="src\bin\pg_dump\pg_backup_db.c" />
+     <File RelativePath="src\bin\pg_dump\pg_backup_files.c" />
+     <File RelativePath="src\bin\pg_dump\pg_backup_null.c" />
+     <File RelativePath="src\bin\pg_dump\pg_backup_tar.c" />
+     <File RelativePath="src\bin\pg_dump\pg_dump.c" />
+     <File RelativePath="src\bin\pg_dump\pg_dump_sort.c" />
+     <File RelativePath="src\bin\pg_dump\win32ver.rc" />
+    </Filter>
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

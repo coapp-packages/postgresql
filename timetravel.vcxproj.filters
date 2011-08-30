@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{08e7dc33-06d7-4726-bdb0-145cae64ea07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\spi">
+      <UniqueIdentifier>{427f7893-67d0-4e9c-8eef-146d042fdeeb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\spi\timetravel.c">
+      <Filter>contrib\spi</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{08981cb5-96c5-4c91-ad05-f72d9ce16890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\unaccent">
+      <UniqueIdentifier>{5df9d51f-3f48-47ac-a857-94ed0da64a90}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\unaccent\unaccent.c">
+      <Filter>contrib\unaccent</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

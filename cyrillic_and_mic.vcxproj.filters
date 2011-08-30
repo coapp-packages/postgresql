@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{46163e59-f9e5-40ba-9ec4-2cd392b873d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{d9f99b1c-741b-46cb-9157-b0b9311691b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{be36528e-b388-426b-8cf7-340e4f007fe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{8ac06f96-ed1d-4c84-b940-09a356ec68a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{20f09e64-68c3-4179-ab25-555bd28113b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\cyrillic_and_mic">
+      <UniqueIdentifier>{1a49ca5a-196b-4b51-b045-3e28c57188f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\cyrillic_and_mic\cyrillic_and_mic.c">
+      <Filter>src\backend\utils\mb\conversion_procs\cyrillic_and_mic</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

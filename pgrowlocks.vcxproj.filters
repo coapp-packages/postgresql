@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{5e7b8203-c02f-4071-ac1b-126d09e85d63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\pgrowlocks">
+      <UniqueIdentifier>{95a47a4a-85fe-48d7-b515-40cfcfd0a72a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\pgrowlocks\pgrowlocks.c">
+      <Filter>contrib\pgrowlocks</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

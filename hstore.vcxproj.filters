@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{3efa05a8-3dd0-48bf-96e4-e3a53759378c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\hstore">
+      <UniqueIdentifier>{ac18bb2f-c749-4c2b-9cef-a5e54b51f555}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\hstore\crc32.c">
+      <Filter>contrib\hstore</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\hstore\hstore_compat.c">
+      <Filter>contrib\hstore</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\hstore\hstore_gin.c">
+      <Filter>contrib\hstore</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\hstore\hstore_gist.c">
+      <Filter>contrib\hstore</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\hstore\hstore_io.c">
+      <Filter>contrib\hstore</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\hstore\hstore_op.c">
+      <Filter>contrib\hstore</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

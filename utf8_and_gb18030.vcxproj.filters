@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{c3161af6-2daf-42ae-b4c1-b553a75a55df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{69493068-96ed-4372-8979-09425e753600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{491cb7ff-c9f7-4116-b1cb-0cdec8c1a434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{121700f3-7b11-40a5-b9fc-29e4daeb53b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{6e2864f4-042d-4c79-9a58-b15f8b899aa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\utf8_and_gb18030">
+      <UniqueIdentifier>{62b05f26-10eb-456d-a57f-f9a49a20f312}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\utf8_and_gb18030\utf8_and_gb18030.c">
+      <Filter>src\backend\utils\mb\conversion_procs\utf8_and_gb18030</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

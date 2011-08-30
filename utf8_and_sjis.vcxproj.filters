@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{fe5e021b-f827-4bbf-95a5-343b883ebb74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{844b7517-6581-4a22-9a5b-e82559e91883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{602250f0-714f-4751-8983-d2e7c7858ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{0ff18c91-994c-4613-aa32-615754c61695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{84ab200c-91bd-446c-9d3b-283e9772693e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\utf8_and_sjis">
+      <UniqueIdentifier>{6a9974a1-f9e6-45ac-96d8-3ba6b59c339c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\utf8_and_sjis\utf8_and_sjis.c">
+      <Filter>src\backend\utils\mb\conversion_procs\utf8_and_sjis</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

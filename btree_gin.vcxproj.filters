@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{74eda8d6-8de1-4db7-a833-5395d3c68593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\btree_gin">
+      <UniqueIdentifier>{55d530dd-6ba5-4945-a287-15b5797ce2f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\btree_gin\btree_gin.c">
+      <Filter>contrib\btree_gin</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

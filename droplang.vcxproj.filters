@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{a747553f-0027-4a84-acbd-253b71d19041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin">
+      <UniqueIdentifier>{31b8e0f6-41db-4cb8-b339-d16c223d4e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\psql">
+      <UniqueIdentifier>{436e5f7b-d1dd-411f-9f76-dd72b89280b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\scripts">
+      <UniqueIdentifier>{c65ba73a-0acf-49f8-8b33-fcbd4e8d904c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bin\psql\mbprint.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\print.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\scripts\common.c">
+      <Filter>src\bin\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\scripts\droplang.c">
+      <Filter>src\bin\scripts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\bin\scripts\win32ver.rc">
+      <Filter>src\bin\scripts</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{6b3bf336-b4e0-4a9c-976a-b89653e96c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\vacuumlo">
+      <UniqueIdentifier>{40cd6b3a-a66f-45f5-b2c6-3bfa80699dff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\vacuumlo\vacuumlo.c">
+      <Filter>contrib\vacuumlo</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

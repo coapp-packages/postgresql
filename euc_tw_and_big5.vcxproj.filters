@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{8fbf4fcf-bbeb-4cb7-b053-0ec37e187f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{9b821b73-5d49-40e7-b309-14d81986c7c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{d1d817bb-cccd-43b9-a9cb-ac44105c937c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{7a36faf3-56af-4aa9-94c1-698327a3263a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{3e270872-c997-43dd-95d8-54020464bdf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\euc_tw_and_big5">
+      <UniqueIdentifier>{aa5581da-63ec-4806-a06e-2afcd1b31bb4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\euc_tw_and_big5\big5.c">
+      <Filter>src\backend\utils\mb\conversion_procs\euc_tw_and_big5</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\euc_tw_and_big5\euc_tw_and_big5.c">
+      <Filter>src\backend\utils\mb\conversion_procs\euc_tw_and_big5</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

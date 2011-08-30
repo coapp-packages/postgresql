@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{80b5c55c-e1e4-437d-a2f1-12f45575a1fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{19e61fa3-dffa-4280-847c-e4ea8b0dfd5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\snowball">
+      <UniqueIdentifier>{d51ce8ac-b455-4573-945b-465437f994e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\snowball\libstemmer">
+      <UniqueIdentifier>{843a0012-a18c-4d6e-9b2f-49994c66c52e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\snowball\dict_snowball.c">
+      <Filter>src\backend\snowball</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\api.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_danish.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_dutch.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_english.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_finnish.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_french.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_german.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_hungarian.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_italian.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_norwegian.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_porter.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_portuguese.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_spanish.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_1_swedish.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_ISO_8859_2_romanian.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_KOI8_R_russian.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_danish.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_dutch.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_english.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_finnish.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_french.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_german.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_hungarian.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_italian.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_norwegian.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_porter.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_portuguese.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_romanian.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_russian.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_spanish.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_swedish.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\stem_UTF_8_turkish.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\snowball\libstemmer\utilities.c">
+      <Filter>src\backend\snowball\libstemmer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

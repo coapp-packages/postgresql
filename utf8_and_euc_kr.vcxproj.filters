@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{01572706-1d97-4a52-b314-2a1810e7f9fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{d5e55821-781b-413d-a0a3-684246f5b9d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{e2aa9f69-d0d4-445c-85ad-ded77e1b0912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{f8d04c4c-6776-414d-9f1e-fddfca89bbd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{7e653319-14e3-4502-a8e3-f675e412e208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\utf8_and_euc_kr">
+      <UniqueIdentifier>{f62a8b6a-10bf-47d3-8a6d-e5eb7b324dcf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\utf8_and_euc_kr\utf8_and_euc_kr.c">
+      <Filter>src\backend\utils\mb\conversion_procs\utf8_and_euc_kr</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

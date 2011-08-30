@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="fuzzystrmatch" ProjectGUID="{08AED8A2-28E6-4BBB-B8FD-A0BF852EAB8F}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\fuzzystrmatch" IntermediateDirectory=".\Debug\fuzzystrmatch"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\fuzzystrmatch\" ObjectFile=".\Debug\fuzzystrmatch\"
+		ProgramDataBaseFileName=".\Debug\fuzzystrmatch\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\fuzzystrmatch\fuzzystrmatch.dll"
+		AdditionalDependencies="Debug\postgres\postgres.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\fuzzystrmatch\fuzzystrmatch.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\fuzzystrmatch\fuzzystrmatch.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Debug\fuzzystrmatch\fuzzystrmatch.lib"
+		ModuleDefinitionFile=".\Debug\fuzzystrmatch\fuzzystrmatch.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\fuzzystrmatch\fuzzystrmatch.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Debug\fuzzystrmatch Win32" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\fuzzystrmatch" IntermediateDirectory=".\Release\fuzzystrmatch"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\fuzzystrmatch\" ObjectFile=".\Release\fuzzystrmatch\"
+		ProgramDataBaseFileName=".\Release\fuzzystrmatch\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\fuzzystrmatch\fuzzystrmatch.dll"
+		AdditionalDependencies="Release\postgres\postgres.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\fuzzystrmatch\fuzzystrmatch.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\fuzzystrmatch\fuzzystrmatch.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Release\fuzzystrmatch\fuzzystrmatch.lib"
+		ModuleDefinitionFile=".\Release\fuzzystrmatch\fuzzystrmatch.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\fuzzystrmatch\fuzzystrmatch.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Release\fuzzystrmatch Win32" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{C9B24F9E-826A-479F-8CCE-43EE9905677B}" Name="postgres" />
+ </References>
+ <Files>
+  <Filter Name="contrib" Filter="">
+   <Filter Name="fuzzystrmatch" Filter="">
+    <File RelativePath="contrib\fuzzystrmatch\dmetaphone.c" />
+    <File RelativePath="contrib\fuzzystrmatch\fuzzystrmatch.c" />
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d694b02f-d6fe-41f7-8f81-9f22fcb8d421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\port">
+      <UniqueIdentifier>{8defbd04-c750-4f67-a5c6-4c0df760b237}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\port\chklocale.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\crypt.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\dirent.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\dirmod.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\erand48.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\exec.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\fseeko.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\getaddrinfo.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\getopt.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\getopt_long.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\getrusage.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\gettimeofday.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\inet_aton.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\kill.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\noblock.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\open.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\path.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\pgsleep.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\pgstrcasecmp.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\pipe.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\qsort.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\qsort_arg.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\random.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\rint.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\snprintf.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\sprompt.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\srandom.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\strlcat.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\strlcpy.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\thread.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\win32env.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\win32error.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

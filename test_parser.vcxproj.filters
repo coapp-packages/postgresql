@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{8770a189-a5ad-4342-9d4b-bc115f41e968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\test_parser">
+      <UniqueIdentifier>{0c917a1f-c405-43df-8f41-8c1fcfd18258}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\test_parser\test_parser.c">
+      <Filter>contrib\test_parser</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

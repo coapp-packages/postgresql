@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{c5911fae-724b-42cb-a6b7-35109ba482f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{fe0e6fff-eab0-4655-a2ae-5413f5c89785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{28674c4c-9aeb-4a85-b125-d36e6cae6d1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{af406db6-ec8f-458b-9fdf-08868aa8130f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{4c88688e-12ef-40c2-83e4-a786cf7bbeef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\utf8_and_johab">
+      <UniqueIdentifier>{0845bbe1-5370-4fd4-8881-8c852fed4f99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\utf8_and_johab\utf8_and_johab.c">
+      <Filter>src\backend\utils\mb\conversion_procs\utf8_and_johab</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

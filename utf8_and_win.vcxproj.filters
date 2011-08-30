@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{39184ce1-84d7-43f9-a23c-66f86ee29319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{e17c9706-2abe-4ef1-8a9a-540f23b892c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{d5472e95-dbe2-4abf-afca-5d9d22f3a3ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{9b11666c-2191-49f5-b37d-f67a35dcf1c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{bd88fc41-68b8-430c-a88b-340ef43188cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\utf8_and_win">
+      <UniqueIdentifier>{c186b665-342d-4973-ac2c-f4d1a151cb35}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\utf8_and_win\utf8_and_win.c">
+      <Filter>src\backend\utils\mb\conversion_procs\utf8_and_win</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

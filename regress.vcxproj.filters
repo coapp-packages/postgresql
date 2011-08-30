@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{acb11054-28c6-470d-ba65-561bdcc5ae90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test">
+      <UniqueIdentifier>{aff685b9-2e92-47b1-810b-ed594cc9495c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\regress">
+      <UniqueIdentifier>{daab39f4-0810-4c27-846b-eae3fa1b62cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\test\regress\regress.c">
+      <Filter>src\test\regress</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

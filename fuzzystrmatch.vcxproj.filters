@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{01afa326-973a-4600-934a-a60a89183756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\fuzzystrmatch">
+      <UniqueIdentifier>{609ab58e-3e5a-49fc-80cc-ba03cc3bc6de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\fuzzystrmatch\dmetaphone.c">
+      <Filter>contrib\fuzzystrmatch</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\fuzzystrmatch\fuzzystrmatch.c">
+      <Filter>contrib\fuzzystrmatch</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

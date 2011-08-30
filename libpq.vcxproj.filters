@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{28d2030b-2f46-492e-9467-72f77a5472ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{d4e0d132-fe75-45d3-ad83-94cc1dcfafe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\libpq">
+      <UniqueIdentifier>{20c091d9-12ca-4bc1-b24f-f0c426323b32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{4a3a90e2-28d0-4592-9efa-19d029e1718d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{36ee2e7c-c82d-40b3-9abe-33f651bd54ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces">
+      <UniqueIdentifier>{63254f2c-b559-4d2d-b10f-fdd92605b358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\libpq">
+      <UniqueIdentifier>{a46838b8-1e83-44c8-8c3a-9f651d3ea533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\port">
+      <UniqueIdentifier>{d463975b-ccd9-43c0-863d-283ee3277004}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\libpq\ip.c">
+      <Filter>src\backend\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\libpq\md5.c">
+      <Filter>src\backend\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\utils\mb\encnames.c">
+      <Filter>src\backend\utils\mb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\utils\mb\wchar.c">
+      <Filter>src\backend\utils\mb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\fe-auth.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\fe-connect.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\fe-exec.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\fe-lobj.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\fe-misc.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\fe-print.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\fe-protocol2.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\fe-protocol3.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\fe-secure.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\libpq-events.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\pqexpbuffer.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\pqsignal.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\pthread-win32.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\libpq\win32.c">
+      <Filter>src\interfaces\libpq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\noblock.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\pgsleep.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\pgstrcasecmp.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="src\port\thread.c">
+      <Filter>src\port</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\interfaces\libpq\libpq.rc">
+      <Filter>src\interfaces\libpq</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{900eab48-49ec-43cf-b6ca-dd8feb06f927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{336e37f4-8f8a-499d-8b41-5d5d615669a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{f87abd90-6b95-49ef-99c7-fba3f0a367a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{263eed78-b137-4459-9cc6-d0f90d6c9296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{f679b6bc-f091-4b97-ac1f-c78db3c6f0d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\euc2004_sjis2004">
+      <UniqueIdentifier>{eaf5f4ac-01c8-41af-adbf-c130aa953824}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\euc2004_sjis2004\euc2004_sjis2004.c">
+      <Filter>src\backend\utils\mb\conversion_procs\euc2004_sjis2004</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

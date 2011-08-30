@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{180cca4c-dad4-4277-bc69-fdb732208e08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{0915cb28-0f42-4687-88db-fc856490f589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{22caa8a1-1ef7-46c4-bfa5-64196afbf733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\hash">
+      <UniqueIdentifier>{ef0190b0-c78c-4372-9de5-cc41ce07c4af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin">
+      <UniqueIdentifier>{63ec7a07-28a7-482f-b57d-d50ce62519bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\pg_resetxlog">
+      <UniqueIdentifier>{9da74d42-7472-4328-9bd5-9951e3e331ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\hash\pg_crc.c">
+      <Filter>src\backend\utils\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_resetxlog\pg_resetxlog.c">
+      <Filter>src\bin\pg_resetxlog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\bin\pg_resetxlog\win32ver.rc">
+      <Filter>src\bin\pg_resetxlog</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

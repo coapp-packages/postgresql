@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{1da63721-81de-470e-997a-a1d4ff3f4147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{44b38e48-62a3-49b8-b04a-cc2f5d6dcf04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{8f76dc00-3715-4a1c-90eb-7d30bf6e765d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{cea1dabc-9181-4eb4-9e09-ec503963e2f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{561e5cdf-57cc-4fa7-9cf0-86fe9719a00c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\ascii_and_mic">
+      <UniqueIdentifier>{11b7ef0b-9223-4c1b-821f-24e84e24aa92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\ascii_and_mic\ascii_and_mic.c">
+      <Filter>src\backend\utils\mb\conversion_procs\ascii_and_mic</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

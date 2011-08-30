@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="pgcrypto" ProjectGUID="{268622C2-C77F-4680-8803-624C9C7FED17}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\pgcrypto" IntermediateDirectory=".\Debug\pgcrypto"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\pgcrypto\" ObjectFile=".\Debug\pgcrypto\"
+		ProgramDataBaseFileName=".\Debug\pgcrypto\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\pgcrypto\pgcrypto.dll"
+		AdditionalDependencies="Debug\postgres\postgres.lib wsock32.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\pgcrypto\pgcrypto.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\pgcrypto\pgcrypto.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Debug\pgcrypto\pgcrypto.lib"
+		ModuleDefinitionFile=".\Debug\pgcrypto\pgcrypto.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\pgcrypto\pgcrypto.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Debug\pgcrypto Win32" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\pgcrypto" IntermediateDirectory=".\Release\pgcrypto"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\pgcrypto\" ObjectFile=".\Release\pgcrypto\"
+		ProgramDataBaseFileName=".\Release\pgcrypto\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\pgcrypto\pgcrypto.dll"
+		AdditionalDependencies="Release\postgres\postgres.lib wsock32.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\pgcrypto\pgcrypto.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\pgcrypto\pgcrypto.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Release\pgcrypto\pgcrypto.lib"
+		ModuleDefinitionFile=".\Release\pgcrypto\pgcrypto.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\pgcrypto\pgcrypto.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Release\pgcrypto Win32" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{C9B24F9E-826A-479F-8CCE-43EE9905677B}" Name="postgres" />
+ </References>
+ <Files>
+  <Filter Name="contrib" Filter="">
+   <Filter Name="pgcrypto" Filter="">
+    <File RelativePath="contrib\pgcrypto\blf.c" />
+    <File RelativePath="contrib\pgcrypto\crypt-blowfish.c" />
+    <File RelativePath="contrib\pgcrypto\crypt-des.c" />
+    <File RelativePath="contrib\pgcrypto\crypt-gensalt.c" />
+    <File RelativePath="contrib\pgcrypto\crypt-md5.c" />
+    <File RelativePath="contrib\pgcrypto\fortuna.c" />
+    <File RelativePath="contrib\pgcrypto\imath.c" />
+    <File RelativePath="contrib\pgcrypto\internal-sha2.c" />
+    <File RelativePath="contrib\pgcrypto\internal.c" />
+    <File RelativePath="contrib\pgcrypto\mbuf.c" />
+    <File RelativePath="contrib\pgcrypto\md5.c" />
+    <File RelativePath="contrib\pgcrypto\pgcrypto.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-armor.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-cfb.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-compress.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-decrypt.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-encrypt.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-info.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-mpi-internal.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-mpi.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-pgsql.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-pubdec.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-pubenc.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-pubkey.c" />
+    <File RelativePath="contrib\pgcrypto\pgp-s2k.c" />
+    <File RelativePath="contrib\pgcrypto\pgp.c" />
+    <File RelativePath="contrib\pgcrypto\px-crypt.c" />
+    <File RelativePath="contrib\pgcrypto\px-hmac.c" />
+    <File RelativePath="contrib\pgcrypto\px.c" />
+    <File RelativePath="contrib\pgcrypto\random.c" />
+    <File RelativePath="contrib\pgcrypto\rijndael.c" />
+    <File RelativePath="contrib\pgcrypto\sha1.c" />
+    <File RelativePath="contrib\pgcrypto\sha2.c" />
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

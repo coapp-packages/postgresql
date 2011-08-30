@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{8b96f98d-b8ca-4cd5-ba41-5a940e8cc434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\earthdistance">
+      <UniqueIdentifier>{76d5e8d2-20af-4e82-a361-abf78ee427aa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\earthdistance\earthdistance.c">
+      <Filter>contrib\earthdistance</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

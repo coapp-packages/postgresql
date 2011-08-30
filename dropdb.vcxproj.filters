@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{ee2fc4ed-b6c8-4bb7-9d2c-772601f30001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{db593521-ea41-41bd-9c23-b9d61cee6f63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\parser">
+      <UniqueIdentifier>{092d05a9-804c-41e5-a4bb-a49d09b81ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin">
+      <UniqueIdentifier>{20026d1c-4a69-4313-84e5-50b85efcf903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\pg_dump">
+      <UniqueIdentifier>{d83dea72-b545-4e99-b392-d7883a0340ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\scripts">
+      <UniqueIdentifier>{e07dec69-df05-4dcb-bbca-c9c3e3ef6f06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\parser\kwlookup.c">
+      <Filter>src\backend\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\dumputils.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\keywords.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\scripts\common.c">
+      <Filter>src\bin\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\scripts\dropdb.c">
+      <Filter>src\bin\scripts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\bin\scripts\win32ver.rc">
+      <Filter>src\bin\scripts</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

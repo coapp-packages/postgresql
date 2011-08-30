@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{bd3a8cb0-4817-444a-94bb-fc8eeb531cc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\tablefunc">
+      <UniqueIdentifier>{2cd529ca-a8e1-4665-b9e3-6cca78d33ef9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\tablefunc\tablefunc.c">
+      <Filter>contrib\tablefunc</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

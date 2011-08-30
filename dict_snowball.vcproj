@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="dict_snowball" ProjectGUID="{B8D82255-0ACE-4713-800E-1DA6608EE82D}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\dict_snowball" IntermediateDirectory=".\Debug\dict_snowball"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\include\snowball"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\dict_snowball\" ObjectFile=".\Debug\dict_snowball\"
+		ProgramDataBaseFileName=".\Debug\dict_snowball\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\dict_snowball\dict_snowball.dll"
+		AdditionalDependencies="Debug\postgres\postgres.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\dict_snowball\dict_snowball.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\dict_snowball\dict_snowball.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Debug\dict_snowball\dict_snowball.lib"
+		ModuleDefinitionFile=".\Debug\dict_snowball\dict_snowball.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\dict_snowball\dict_snowball.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Debug\dict_snowball Win32" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\dict_snowball" IntermediateDirectory=".\Release\dict_snowball"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\include\snowball"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\dict_snowball\" ObjectFile=".\Release\dict_snowball\"
+		ProgramDataBaseFileName=".\Release\dict_snowball\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\dict_snowball\dict_snowball.dll"
+		AdditionalDependencies="Release\postgres\postgres.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\dict_snowball\dict_snowball.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\dict_snowball\dict_snowball.map"
+		SubSystem="1" TargetMachine="1"
+		ImportLibrary="Release\dict_snowball\dict_snowball.lib"
+		ModuleDefinitionFile=".\Release\dict_snowball\dict_snowball.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\dict_snowball\dict_snowball.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+	<Tool Name="VCPreLinkEventTool" Description="Generate DEF file" CommandLine="perl src\tools\msvc\gendef.pl Release\dict_snowball Win32" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{C9B24F9E-826A-479F-8CCE-43EE9905677B}" Name="postgres" />
+ </References>
+ <Files>
+  <Filter Name="src" Filter="">
+   <Filter Name="backend" Filter="">
+    <Filter Name="snowball" Filter="">
+     <File RelativePath="src\backend\snowball\dict_snowball.c" />
+     <Filter Name="libstemmer" Filter="">
+      <File RelativePath="src\backend\snowball\libstemmer\api.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_danish.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_dutch.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_english.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_finnish.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_french.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_german.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_hungarian.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_italian.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_norwegian.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_porter.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_portuguese.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_spanish.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_1_swedish.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_ISO_8859_2_romanian.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_KOI8_R_russian.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_danish.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_dutch.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_english.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_finnish.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_french.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_german.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_hungarian.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_italian.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_norwegian.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_porter.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_portuguese.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_romanian.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_russian.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_spanish.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_swedish.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\stem_UTF_8_turkish.c" />
+      <File RelativePath="src\backend\snowball\libstemmer\utilities.c" />
+     </Filter>
+    </Filter>
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

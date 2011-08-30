@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{318406e8-5e6b-4d46-b844-484fcf7317d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{c4f375ef-f57c-464a-92e7-64dd8452f00e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{1c6da33c-d660-40b2-80ae-42ff412013a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\hash">
+      <UniqueIdentifier>{acec997e-41d4-4e19-93fa-16329226d467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin">
+      <UniqueIdentifier>{8bc5f286-1a92-4b53-b0c6-a23a959fa689}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\pg_controldata">
+      <UniqueIdentifier>{5bf1f22b-587e-4e33-b1ea-565b213824d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\hash\pg_crc.c">
+      <Filter>src\backend\utils\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_controldata\pg_controldata.c">
+      <Filter>src\bin\pg_controldata</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\bin\pg_controldata\win32ver.rc">
+      <Filter>src\bin\pg_controldata</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

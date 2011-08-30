@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{56205e16-b560-4fc7-b034-38bb279c51c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\pg_standby">
+      <UniqueIdentifier>{ba1c7421-2475-4e54-a895-676620094cc1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\pg_standby\pg_standby.c">
+      <Filter>contrib\pg_standby</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="libpgtypes" ProjectGUID="{BB7F9061-817D-4A7D-BA79-69FC7CB0A9B2}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\libpgtypes" IntermediateDirectory=".\Debug\libpgtypes"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\interfaces\ecpg\include"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;FRONTEND;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\libpgtypes\" ObjectFile=".\Debug\libpgtypes\"
+		ProgramDataBaseFileName=".\Debug\libpgtypes\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\libpgtypes\libpgtypes.dll"
+		AdditionalDependencies="Debug\libpgport\libpgport.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\libpgtypes\libpgtypes.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\libpgtypes\libpgtypes.map"
+		SubSystem="1" TargetMachine="1"
+		ModuleDefinitionFile="src\interfaces\ecpg\pgtypeslib\pgtypeslib.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\libpgtypes\libpgtypes.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\libpgtypes" IntermediateDirectory=".\Release\libpgtypes"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\interfaces\ecpg\include"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;FRONTEND;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\libpgtypes\" ObjectFile=".\Release\libpgtypes\"
+		ProgramDataBaseFileName=".\Release\libpgtypes\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\libpgtypes\libpgtypes.dll"
+		AdditionalDependencies="Release\libpgport\libpgport.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\libpgtypes\libpgtypes.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\libpgtypes\libpgtypes.map"
+		SubSystem="1" TargetMachine="1"
+		ModuleDefinitionFile="src\interfaces\ecpg\pgtypeslib\pgtypeslib.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\libpgtypes\libpgtypes.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{2778BBF8-4D6F-4B58-ACCA-033CAB83E87E}" Name="libpgport" />
+ </References>
+ <Files>
+  <Filter Name="src" Filter="">
+   <Filter Name="interfaces" Filter="">
+    <Filter Name="ecpg" Filter="">
+     <Filter Name="pgtypeslib" Filter="">
+      <File RelativePath="src\interfaces\ecpg\pgtypeslib\common.c" />
+      <File RelativePath="src\interfaces\ecpg\pgtypeslib\datetime.c" />
+      <File RelativePath="src\interfaces\ecpg\pgtypeslib\dt_common.c" />
+      <File RelativePath="src\interfaces\ecpg\pgtypeslib\interval.c" />
+      <File RelativePath="src\interfaces\ecpg\pgtypeslib\numeric.c" />
+      <File RelativePath="src\interfaces\ecpg\pgtypeslib\timestamp.c" />
+     </Filter>
+    </Filter>
+   </Filter>
+   <Filter Name="port" Filter="">
+    <File RelativePath="src\port\pgstrcasecmp.c" />
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

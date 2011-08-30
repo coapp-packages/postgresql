@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="pg_upgrade" ProjectGUID="{FF5C3699-BC39-4B7E-8660-36E9A4FECCBE}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\pg_upgrade" IntermediateDirectory=".\Debug\pg_upgrade"
+	ConfigurationType="1" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\interfaces\libpq"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\pg_upgrade\" ObjectFile=".\Debug\pg_upgrade\"
+		ProgramDataBaseFileName=".\Debug\pg_upgrade\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\pg_upgrade\pg_upgrade.exe"
+		AdditionalDependencies="Debug\libpq\libpq.lib Debug\libpgport\libpgport.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\pg_upgrade\pg_upgrade.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\pg_upgrade\pg_upgrade.map"
+		SubSystem="1" TargetMachine="1"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\pg_upgrade\pg_upgrade.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\pg_upgrade" IntermediateDirectory=".\Release\pg_upgrade"
+	ConfigurationType="1" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\interfaces\libpq"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\pg_upgrade\" ObjectFile=".\Release\pg_upgrade\"
+		ProgramDataBaseFileName=".\Release\pg_upgrade\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\pg_upgrade\pg_upgrade.exe"
+		AdditionalDependencies="Release\libpq\libpq.lib Release\libpgport\libpgport.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\pg_upgrade\pg_upgrade.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\pg_upgrade\pg_upgrade.map"
+		SubSystem="1" TargetMachine="1"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\pg_upgrade\pg_upgrade.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{552FACB6-F7A2-490B-B3B5-CEB54072232E}" Name="libpq" />
+  <ProjectReference ReferencedProjectIdentifier="{2778BBF8-4D6F-4B58-ACCA-033CAB83E87E}" Name="libpgport" />
+ </References>
+ <Files>
+  <Filter Name="contrib" Filter="">
+   <Filter Name="pg_upgrade" Filter="">
+    <File RelativePath="contrib\pg_upgrade\check.c" />
+    <File RelativePath="contrib\pg_upgrade\controldata.c" />
+    <File RelativePath="contrib\pg_upgrade\dump.c" />
+    <File RelativePath="contrib\pg_upgrade\exec.c" />
+    <File RelativePath="contrib\pg_upgrade\file.c" />
+    <File RelativePath="contrib\pg_upgrade\function.c" />
+    <File RelativePath="contrib\pg_upgrade\info.c" />
+    <File RelativePath="contrib\pg_upgrade\option.c" />
+    <File RelativePath="contrib\pg_upgrade\page.c" />
+    <File RelativePath="contrib\pg_upgrade\pg_upgrade.c" />
+    <File RelativePath="contrib\pg_upgrade\relfilenode.c" />
+    <File RelativePath="contrib\pg_upgrade\server.c" />
+    <File RelativePath="contrib\pg_upgrade\tablespace.c" />
+    <File RelativePath="contrib\pg_upgrade\util.c" />
+    <File RelativePath="contrib\pg_upgrade\version.c" />
+    <File RelativePath="contrib\pg_upgrade\version_old_8_3.c" />
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

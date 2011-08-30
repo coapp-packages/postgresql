@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{f8d63179-631f-481b-a3a7-b305492fe795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\citext">
+      <UniqueIdentifier>{0136e4e5-9811-49d7-ac50-c8e5ee047c75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\citext\citext.c">
+      <Filter>contrib\citext</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{c41aeee6-34fb-498d-98ec-37eb0fa88175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin">
+      <UniqueIdentifier>{be82e600-68b1-479c-b684-a5e365d28556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\pg_ctl">
+      <UniqueIdentifier>{4c03dcab-09f3-4e04-8233-9e1a32cdcc06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bin\pg_ctl\pg_ctl.c">
+      <Filter>src\bin\pg_ctl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\bin\pg_ctl\win32ver.rc">
+      <Filter>src\bin\pg_ctl</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

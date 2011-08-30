@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{b28b6f62-81fe-4244-94d7-c74e231a4b23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{41dc7702-9b52-4716-8470-6b45546f579b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{86330882-576a-41e1-a218-2074294a4868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{2b9358e7-9218-46e4-a449-21c971f05a5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{1eef26b6-fa30-4ae4-bd60-1902f43afe9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\utf8_and_cyrillic">
+      <UniqueIdentifier>{5b91d7dc-db19-4331-b17c-ede281de2625}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\utf8_and_cyrillic\utf8_and_cyrillic.c">
+      <Filter>src\backend\utils\mb\conversion_procs\utf8_and_cyrillic</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

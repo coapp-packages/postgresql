@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{bf901655-8f63-434a-bd6b-e1fa934febe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\pg_stat_statements">
+      <UniqueIdentifier>{2366cbdc-f3a0-4535-8b0a-580af54664b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\pg_stat_statements\pg_stat_statements.c">
+      <Filter>contrib\pg_stat_statements</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

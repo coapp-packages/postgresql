@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="libpgport" ProjectGUID="{2778BBF8-4D6F-4B58-ACCA-033CAB83E87E}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\libpgport" IntermediateDirectory=".\Debug\libpgport"
+	ConfigurationType="4" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;FRONTEND;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\libpgport\" ObjectFile=".\Debug\libpgport\"
+		ProgramDataBaseFileName=".\Debug\libpgport\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\libpgport\libpgport.lib"
+		AdditionalDependencies=""
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\libpgport\libpgport.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\libpgport\libpgport.map"
+		SubSystem="1" TargetMachine="1"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\libpgport\libpgport.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\libpgport" IntermediateDirectory=".\Release\libpgport"
+	ConfigurationType="4" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;FRONTEND;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\libpgport\" ObjectFile=".\Release\libpgport\"
+		ProgramDataBaseFileName=".\Release\libpgport\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\libpgport\libpgport.lib"
+		AdditionalDependencies=""
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\libpgport\libpgport.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\libpgport\libpgport.map"
+		SubSystem="1" TargetMachine="1"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\libpgport\libpgport.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+ </Configurations>
+ <References>
+ </References>
+ <Files>
+  <Filter Name="src" Filter="">
+   <Filter Name="port" Filter="">
+    <File RelativePath="src\port\chklocale.c" />
+    <File RelativePath="src\port\crypt.c" />
+    <File RelativePath="src\port\dirent.c" />
+    <File RelativePath="src\port\dirmod.c" />
+    <File RelativePath="src\port\erand48.c" />
+    <File RelativePath="src\port\exec.c" />
+    <File RelativePath="src\port\fseeko.c" />
+    <File RelativePath="src\port\getaddrinfo.c" />
+    <File RelativePath="src\port\getopt.c" />
+    <File RelativePath="src\port\getopt_long.c" />
+    <File RelativePath="src\port\getrusage.c" />
+    <File RelativePath="src\port\gettimeofday.c" />
+    <File RelativePath="src\port\inet_aton.c" />
+    <File RelativePath="src\port\kill.c" />
+    <File RelativePath="src\port\noblock.c" />
+    <File RelativePath="src\port\open.c" />
+    <File RelativePath="src\port\path.c" />
+    <File RelativePath="src\port\pgsleep.c" />
+    <File RelativePath="src\port\pgstrcasecmp.c" />
+    <File RelativePath="src\port\pipe.c" />
+    <File RelativePath="src\port\qsort.c" />
+    <File RelativePath="src\port\qsort_arg.c" />
+    <File RelativePath="src\port\random.c" />
+    <File RelativePath="src\port\rint.c" />
+    <File RelativePath="src\port\snprintf.c" />
+    <File RelativePath="src\port\sprompt.c" />
+    <File RelativePath="src\port\srandom.c" />
+    <File RelativePath="src\port\strlcat.c" />
+    <File RelativePath="src\port\strlcpy.c" />
+    <File RelativePath="src\port\thread.c" />
+    <File RelativePath="src\port\win32env.c" />
+    <File RelativePath="src\port\win32error.c" />
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

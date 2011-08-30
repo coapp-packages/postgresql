@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{edeec723-bbdf-4109-ae09-0d7014ab2487}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\lo">
+      <UniqueIdentifier>{0ea91208-9706-4b8e-9933-c52a7843fb14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="contrib\lo\lo.c">
+      <Filter>contrib\lo</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

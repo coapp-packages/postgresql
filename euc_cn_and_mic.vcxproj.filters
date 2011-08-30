@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{238885ca-7a6c-4d6a-b8d0-b19e97c614ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{123649cc-2fda-4535-868c-ad15aac57ae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{fd0cc81f-da6c-4b40-b822-3032c38a203e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{824ab6bc-ed63-4f53-904c-14549ef482a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{50df3a6c-d6d9-4281-a5d7-080a041546c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\euc_cn_and_mic">
+      <UniqueIdentifier>{b2ca7b47-7a6d-4237-bc36-af7f0db31c33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\euc_cn_and_mic\euc_cn_and_mic.c">
+      <Filter>src\backend\utils\mb\conversion_procs\euc_cn_and_mic</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

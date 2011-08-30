@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{307bcf60-8dd0-45c8-b2e7-d913738786e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{136f8880-1b4b-4f94-b291-9aa33ba98927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{07cee269-71dc-4d67-bd82-4591707c243c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{ac9df85d-521d-485c-8a27-58fdce07dc2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{14467f0c-5100-4928-8f13-2bfb2d40aa43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\utf8_and_big5">
+      <UniqueIdentifier>{08a3482c-d4cb-4ed7-a38e-34319060efe7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\utf8_and_big5\utf8_and_big5.c">
+      <Filter>src\backend\utils\mb\conversion_procs\utf8_and_big5</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

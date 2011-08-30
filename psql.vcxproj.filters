@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{fdc1aa00-2aaf-4f2d-8a21-02571e38bd20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{432de3ae-8ee7-4997-935e-1cd5c155841b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\parser">
+      <UniqueIdentifier>{fe7b8959-60d1-4e2f-bf52-dae909ee27ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin">
+      <UniqueIdentifier>{008d43b0-af07-4099-8513-dad95f86c924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\pg_dump">
+      <UniqueIdentifier>{7fe3f89d-29d6-40fc-92f2-9e8eae036c9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\psql">
+      <UniqueIdentifier>{f3c1daf7-a509-4d5c-9148-984195aa136d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\parser\kwlookup.c">
+      <Filter>src\backend\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\dumputils.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\keywords.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\command.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\common.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\copy.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\describe.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\help.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\input.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\large_obj.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\mainloop.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\mbprint.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\print.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\prompt.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\sql_help.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\startup.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\stringutils.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\tab-complete.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\psql\variables.c">
+      <Filter>src\bin\psql</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\bin\psql\win32ver.rc">
+      <Filter>src\bin\psql</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\bin\psql\psqlscan.l">
+      <Filter>src\bin\psql</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

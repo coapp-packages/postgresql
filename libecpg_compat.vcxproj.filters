@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{bfae150d-3df9-4cca-ac86-c86e147d40a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces">
+      <UniqueIdentifier>{4d81080f-5460-436a-aef1-bf45546bd87a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\ecpg">
+      <UniqueIdentifier>{70922f69-d686-4038-8a85-ac21ac737cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\interfaces\ecpg\compatlib">
+      <UniqueIdentifier>{8eb114a6-8901-4f4b-b64b-108d4c136265}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\interfaces\ecpg\compatlib\informix.c">
+      <Filter>src\interfaces\ecpg\compatlib</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

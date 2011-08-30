@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{203df82f-5a8a-4ea4-87b7-288590479107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{f222b7e5-350a-4f97-bdd1-1e7a52a439f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils">
+      <UniqueIdentifier>{698f8aec-b977-40d1-9ab0-5b21a3e798f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb">
+      <UniqueIdentifier>{23f72305-52df-42ed-9561-3cb10f2855e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs">
+      <UniqueIdentifier>{42d86032-7d77-438d-9d3b-16cb9ae48fd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\utils\mb\conversion_procs\utf8_and_iso8859_1">
+      <UniqueIdentifier>{fe918dee-eef8-4ca4-b361-f704f23d2a07}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\utils\mb\conversion_procs\utf8_and_iso8859_1\utf8_and_iso8859_1.c">
+      <Filter>src\backend\utils\mb\conversion_procs\utf8_and_iso8859_1</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

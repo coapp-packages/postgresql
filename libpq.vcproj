@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="libpq" ProjectGUID="{552FACB6-F7A2-490B-B3B5-CEB54072232E}">
+ <Platforms><Platform Name="Win32"/></Platforms>
+ <Configurations>
+  <Configuration Name="Debug|Win32" OutputDirectory=".\Debug\libpq" IntermediateDirectory=".\Debug\libpq"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="0"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\port"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;FRONTEND;UNSAFE_STAT_OK;_DEBUG;DEBUG=1;"
+		StringPooling="false"
+		RuntimeLibrary="3" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Debug\libpq\" ObjectFile=".\Debug\libpq\"
+		ProgramDataBaseFileName=".\Debug\libpq\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Debug\libpq\libpq.dll"
+		AdditionalDependencies="wsock32.lib secur32.lib ws2_32.lib wldap32.lib Debug\libpgport\libpgport.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Debug\libpq\libpq.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Debug\libpq\libpq.map"
+		SubSystem="1" TargetMachine="1"
+		ModuleDefinitionFile="src\interfaces\libpq\libpqdll.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Debug\libpq\libpq.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+  <Configuration Name="Release|Win32" OutputDirectory=".\Release\libpq" IntermediateDirectory=".\Release\libpq"
+	ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="FALSE" CharacterSet="2" WholeProgramOptimization="0">
+	<Tool Name="VCCLCompilerTool" Optimization="3"
+		AdditionalIncludeDirectories="src/include;src/include/port/win32;src/include/port/win32_msvc;src\port"
+		PreprocessorDefinitions="WIN32;_WINDOWS;__WINDOWS__;__WIN32__;EXEC_BACKEND;WIN32_STACK_RLIMIT=4194304;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;FRONTEND;UNSAFE_STAT_OK;"
+		StringPooling="true"
+		RuntimeLibrary="2" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		AdditionalOptions="/MP"
+		AssemblerOutput="0" AssemblerListingLocation=".\Release\libpq\" ObjectFile=".\Release\libpq\"
+		ProgramDataBaseFileName=".\Release\libpq\" BrowseInformation="0"
+		WarningLevel="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" CompileAs="0"/>
+	<Tool Name="VCLinkerTool" OutputFile=".\Release\libpq\libpq.dll"
+		AdditionalDependencies="wsock32.lib secur32.lib ws2_32.lib wldap32.lib Release\libpgport\libpgport.lib"
+		LinkIncremental="0" SuppressStartupBanner="TRUE" AdditionalLibraryDirectories="" IgnoreDefaultLibraryNames="libc"
+		StackReserveSize="4194304" DisableSpecificWarnings="4018;4244;4273;4102;4090;4267"
+		GenerateDebugInformation="TRUE" ProgramDatabaseFile=".\Release\libpq\libpq.pdb"
+		GenerateMapFile="FALSE" MapFileName=".\Release\libpq\libpq.map"
+		SubSystem="1" TargetMachine="1"
+		ModuleDefinitionFile="src\interfaces\libpq\libpqdll.def"
+	/>
+	<Tool Name="VCLibrarianTool" OutputFile=".\Release\libpq\libpq.lib" IgnoreDefaultLibraryNames="libc" />
+	<Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="src\include" />
+  </Configuration>
+ </Configurations>
+ <References>
+  <ProjectReference ReferencedProjectIdentifier="{2778BBF8-4D6F-4B58-ACCA-033CAB83E87E}" Name="libpgport" />
+ </References>
+ <Files>
+  <Filter Name="src" Filter="">
+   <Filter Name="backend" Filter="">
+    <Filter Name="libpq" Filter="">
+     <File RelativePath="src\backend\libpq\ip.c" />
+     <File RelativePath="src\backend\libpq\md5.c" />
+    </Filter>
+    <Filter Name="utils" Filter="">
+     <Filter Name="mb" Filter="">
+      <File RelativePath="src\backend\utils\mb\encnames.c" />
+      <File RelativePath="src\backend\utils\mb\wchar.c" />
+     </Filter>
+    </Filter>
+   </Filter>
+   <Filter Name="interfaces" Filter="">
+    <Filter Name="libpq" Filter="">
+     <File RelativePath="src\interfaces\libpq\fe-auth.c" />
+     <File RelativePath="src\interfaces\libpq\fe-connect.c" />
+     <File RelativePath="src\interfaces\libpq\fe-exec.c" />
+     <File RelativePath="src\interfaces\libpq\fe-lobj.c" />
+     <File RelativePath="src\interfaces\libpq\fe-misc.c" />
+     <File RelativePath="src\interfaces\libpq\fe-print.c" />
+     <File RelativePath="src\interfaces\libpq\fe-protocol2.c" />
+     <File RelativePath="src\interfaces\libpq\fe-protocol3.c" />
+     <File RelativePath="src\interfaces\libpq\fe-secure.c" />
+     <File RelativePath="src\interfaces\libpq\libpq-events.c" />
+     <File RelativePath="src\interfaces\libpq\libpq.rc" />
+     <File RelativePath="src\interfaces\libpq\pqexpbuffer.c" />
+     <File RelativePath="src\interfaces\libpq\pqsignal.c" />
+     <File RelativePath="src\interfaces\libpq\pthread-win32.c" />
+     <File RelativePath="src\interfaces\libpq\win32.c" />
+    </Filter>
+   </Filter>
+   <Filter Name="port" Filter="">
+    <File RelativePath="src\port\noblock.c" />
+    <File RelativePath="src\port\pgsleep.c" />
+    <File RelativePath="src\port\pgstrcasecmp.c" />
+    <File RelativePath="src\port\thread.c" />
+   </Filter>
+  </Filter>
+ </Files>
+ <Globals/>
+</VisualStudioProject>

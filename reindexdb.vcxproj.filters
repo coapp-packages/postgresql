@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{cd850002-31cc-42da-a280-3e313dab2ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend">
+      <UniqueIdentifier>{7bf6579e-61ba-4ff1-b060-a24e59f92490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backend\parser">
+      <UniqueIdentifier>{83ab4763-2bb2-4b98-8efb-09da508676e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin">
+      <UniqueIdentifier>{f5ddc39f-d5da-4279-a5cd-356a631a2bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\pg_dump">
+      <UniqueIdentifier>{3b99eae9-ed55-486b-a2fe-6a11b40e8964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bin\scripts">
+      <UniqueIdentifier>{58dfb1eb-4081-4472-a8a3-c89e5ef701a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backend\parser\kwlookup.c">
+      <Filter>src\backend\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\dumputils.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\pg_dump\keywords.c">
+      <Filter>src\bin\pg_dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\scripts\common.c">
+      <Filter>src\bin\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bin\scripts\reindexdb.c">
+      <Filter>src\bin\scripts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\bin\scripts\win32ver.rc">
+      <Filter>src\bin\scripts</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
